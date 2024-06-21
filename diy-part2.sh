@@ -34,13 +34,13 @@ feeds/packages/net/cdnspeedtest
 feeds/packages/lang/golang
 feeds/packages/devel/gn
 package/libs/openssl
-package/network/utils/iptables
-package/network/services/dnsmasq
 target/linux/mediatek/patches-5.4/0504-macsec-revert-async-support.patch
 target/linux/mediatek/patches-5.4/0005-dts-mt7622-add-gsw.patch
 target/linux/mediatek/patches-5.4/0993-arm64-dts-mediatek-Split-PCIe-node-for-MT2712-MT7622.patch
 target/linux/mediatek/patches-5.4/1024-pcie-add-multi-MSI-support.patch
 "
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/set wireless.default_radio${devidx}.ssid=ImmortalWrt/set wireless.default_radio${devidx}.ssid=BodhiBear/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 for cmd in $del_data;
 do
