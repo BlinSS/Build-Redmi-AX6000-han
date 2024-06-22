@@ -34,6 +34,8 @@ feeds/packages/net/cdnspeedtest
 feeds/packages/lang/golang
 feeds/packages/devel/gn
 package/libs/openssl
+package/network/utils/iptables
+package/network/services/dnsmasq
 target/linux/mediatek/patches-5.4/0504-macsec-revert-async-support.patch
 target/linux/mediatek/patches-5.4/0005-dts-mt7622-add-gsw.patch
 target/linux/mediatek/patches-5.4/0993-arm64-dts-mediatek-Split-PCIe-node-for-MT2712-MT7622.patch
